@@ -1,0 +1,10 @@
+.gradient {
+  padding-bottom: 282px;
+}
+
+.gradient .container {
+  margin-top: 282px;
+  height: 500px;
+  background: linear-gradient(180deg, #00ffaa 0%, #0e60ff 100%);
+  border-radius: 30px;
+}

@@ -1,0 +1,72 @@
+.hero {
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  padding-top: 145px;
+}
+@media (max-width: 991px) {
+  .hero .container {
+    flex-direction: column;
+    padding-top: 200px;
+    text-align: center;
+  }
+}
+
+.hero .heroLeft {
+  width: 45%;
+  margin-right: 5%;
+}
+@media (max-width: 991px) {
+  .hero .heroLeft {
+    width: 80%;
+    margin-right: 0;
+  }
+}
+
+.hero .heroLeft h1 {
+  font-size: 70px;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .hero .heroLeft h1 {
+    font-size: 40px;
+  }
+}
+
+.hero .heroLeft p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: lowercase;
+  color: #ffffff;
+  width: 70%;
+}
+
+.hero .heroLeft button {
+  background: #0e60ff;
+  padding: 15px 30px;
+  border: 0;
+  color: white;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.hero .heroRight {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  .hero .heroRight {
+    width: 100%;
+  }
+  .hero .heroLeft p {
+    margin: 30px auto;
+  }
+}
+
+.hero .heroRight img {
+  max-width: 100%;
+}

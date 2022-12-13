@@ -1,0 +1,97 @@
+.nav {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 145px;
+}
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.nav .container .menu {
+  width: 60px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .nav .container .menu {
+    display: block;
+  }
+}
+
+.nav .logo {
+  width: 500px;
+  display: flex;
+  align-items: center;
+}
+.nav .logo img {
+  width: 109.82px;
+  height: 111px;
+}
+
+.nav .logo h3 {
+  font-size: 45px;
+  margin-left: 20px;
+  color: white;
+}
+
+@media (max-width: 761px) {
+  .nav .logo img {
+    width: 90px;
+    height: 100px;
+    margin-left: 30px;
+  }
+  .nav .logo h3 {
+    font-size: 20px;
+  }
+}
+
+.nav .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .nav .links {
+    display: none;
+  }
+}
+.active {
+  display: flex !important;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  flex-direction: column;
+  position: absolute;
+  top: 145px;
+  width: 80%;
+  color: black;
+  padding: 50px;
+  transition: all 0.3s;
+}
+
+.nav .links li a {
+  color: white;
+  font-size: 20px;
+  display: block;
+  padding: 10px 20px;
+}
+
+.nav .links li button {
+  padding: 15px 20px;
+  border: 0;
+  font: inherit;
+  background: #0e60ff;
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .nav .links li:not(:last-of-type) a {
+    color: black;
+    padding: 30px;
+    font-size: 30px;
+  }
+}
