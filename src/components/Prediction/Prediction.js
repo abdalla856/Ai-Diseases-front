@@ -69,9 +69,9 @@ const Prediction = () => {
           <button onClick={getprediction}>AI Prediction</button>
 
           <div className="predictionBottom">
-            <p>Name: {name || ''}</p>
-            <p>Prediction: {data.prediction || ''} </p>
-            <p>Accuracy: {data.accuracy || ''}</p>
+            <p>Name: <span>{name || ''}</span></p>
+            <p>Prediction: <span>{data.prediction || ''}</span> </p>
+            <p>Accuracy: <span>{data.accuracy || ''}</span>%</p>
           </div>
         </div>
         <div className="predictionRight">
